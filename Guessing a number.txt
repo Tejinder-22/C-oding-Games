@@ -1,0 +1,60 @@
+import java.util.*;
+
+public class Guessing {
+    public static void main(String args[]) {
+   
+   int r = (int)(Math.random()*10+1);
+     System.out.println("enter any positive number below 10");
+     
+   Scanner sc  = new Scanner(System.in);
+   
+   int n = sc.nextInt();
+ 
+   int count = 1;
+   
+   while(n!=r)
+   {
+       count++;
+       
+       if(n<r)
+       {
+           System.out.println("hint: Entered number less");
+        
+           
+       }
+       else
+       {
+          System.out.println("hint: Entered number greater"); 
+          
+          
+       }
+        System.out.println("enter another number");
+       n = sc.nextInt();
+   }
+   
+   
+   if(count==1)
+   System.out.println("you scored *****\nCongratulations!!");
+   
+   if(count==2)
+   System.out.println("you scored ****");
+   
+   if(count==3)
+   System.out.println("you scored ***");
+   
+   if(count==4)
+   System.out.println("you scored **");
+  
+   if(count>4)
+   System.out.println("app rehne dijiye 😂");
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    }
+}
